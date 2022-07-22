@@ -20,9 +20,14 @@ body{
     position: relative;
     width: 350px;
     height: 85px;
-    background: #34ABFA;
+    background: #1B7F79;
     border-radius: 20px;
-    filter: drop-shadow(-20px 20px 40px #436BFA);
+    filter: drop-shadow(-20px 20px 40px #00CCC0);
+    transition: 0.5s ease-in-out;
+}
+
+.card.active{
+    height: 420px;
 }
 
 .toggle{
@@ -32,7 +37,7 @@ body{
     transform: translateX(-50%);
     width: 70px;
     height: 60px;
-    background: #34ABFA;
+    background: #1B7F79;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     cursor: pointer;
@@ -47,7 +52,7 @@ body{
     height: 35px;
     background: transparent;
     border-top-right-radius: 35px;
-    box-shadow: 11px -10px 0 10px #34ABFA;
+    box-shadow: 11px -10px 0 10px #1B7F79;
 }
 .toggle::after{
     content: '';
@@ -57,7 +62,7 @@ body{
     height: 35px;
     background: transparent;
     border-top-left-radius: 35px;
-    box-shadow: -11px -10px 0 10px #34ABFA;
+    box-shadow: -11px -10px 0 10px #1B7F79;
 }
 
 .toggle span{
@@ -69,4 +74,9 @@ body{
     height: 10px;
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.card.active .toggle span{
+    transform: translate(-50%, -70%) rotate(225deg);
 }
