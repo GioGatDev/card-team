@@ -80,3 +80,32 @@ body{
 .card.active .toggle span{
     transform: translate(-50%, -70%) rotate(225deg);
 }
+
+.contentBx{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.contentBx .content{
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBx .content h2{
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25em;
+    letter-spacing: 0.04em;
+    line-height: 1.1em;
+}
+
+.contentBx .content h2 span{
+    font-size: 0.75em;
+    font-weight: 700;
+    text-transform: initial;
+}
